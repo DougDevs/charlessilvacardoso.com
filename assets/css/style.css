@@ -1173,3 +1173,17 @@ section {
   text-align: center;
   font-size: 13px;
 }
+
+.botaover {
+  display: inline-block;
+  padding: 6px 12px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #d43076;
+  border-radius: 5px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.botaover:hover {
+  background-color: #fff;
+}
