@@ -663,7 +663,6 @@ section {
   box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.2);
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
-  margin-bottom: 10px;
   text-align: center;
   z-index: 1;
 }
@@ -705,7 +704,7 @@ section {
 
 .services .title {
   font-weight: 700;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
   font-size: 18px;
 }
 
