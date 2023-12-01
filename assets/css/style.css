@@ -679,7 +679,7 @@ section {
 }
 
 .services .icon-box:hover::before {
-  background: #d43076;
+  background: #db85aa;
   height: 100%;
   border-radius: 0px;
 }
