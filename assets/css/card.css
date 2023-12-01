@@ -1,0 +1,42 @@
+/* style.css */
+
+/* Estilo para a carta (card) */
+.card {
+    border: 3px solid #8e44ad;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo para o título da carta */
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilo para o texto da carta */
+.card-text {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Estilo para a seção de Contratar */
+.alert-info {
+    background-color: #f0f9ff;
+    border-color: #bee5eb;
+    color: #004085;
+}
+
+.alert-info a {
+    color: #002752;
+    font-weight: bold;
+}
+
+.alert-info a:hover {
+    text-decoration: underline;
+}
