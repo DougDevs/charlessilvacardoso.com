@@ -665,6 +665,7 @@ section {
   border-radius: 8px;
   text-align: center;
   z-index: 1;
+  margin-bottom: 10px;
 }
 
 .services .icon-box::before {
@@ -676,6 +677,8 @@ section {
   height: 0;
   transition: ease-in-out 0.3s;
   z-index: -1;
+  text-align: center;
+ 
 }
 
 .services .icon-box:hover::before {
