@@ -1220,6 +1220,7 @@ section {
 
 .team .member:hover .member-info {
   max-height: 300px;
+  background-color: #c6e2fd;
 }
 
 .team .member h4 {
