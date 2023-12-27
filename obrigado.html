@@ -19,34 +19,41 @@
     <title>Agradecimento</title>
     <style>
 
-        body {
+body {
             font-family: Arial, sans-serif;
             text-align: center;
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 100vh; /* Use 100vh para cobrir toda a altura da tela */
+            height: 100vh;  
             margin: 0;
             background-image: url('/assets/img/obrigado.jpg');
             background-repeat: no-repeat;
             background-size: cover;
-            background-position: center; /* Centraliza a imagem na tela */
+            background-position: center;
+        }
+
+
+        .container p {
+    margin-bottom: 0;
+    text-align: center;
+    color: transparent; /* Torna o texto transparente para que o degradê de fundo seja visível */
+    background-image: linear-gradient(to right,  #800080, #ffffff, #800080); /* Cria um degradê de roxo para branco */
+    -webkit-background-clip: text; /* Necessário para navegadores baseados em WebKit, como o Chrome e o Safari */
+    transition: color 0.3s ease-in-out; /* Adiciona uma transição suave na mudança de cor */
 }
 
+        @media (min-width: 600px) {
+            /* Se a largura da tela for maior que 600 pixels, aplique a margem de 20px à esquerda */
+            .container p,
+            .container button {
+                margin-left: -990px;
+            }
+        }
 
-.container {
-    padding: 20px;
-    border-radius: 10px;
-}
+        
 
-/* Exemplo de estilo para textos e botões dentro do contêiner */
-.container p {
-    margin-bottom: 10px;
-    font-size: large;
-    color: aliceblue;
-}
-
-.container button {
+        .container button {
             padding: 10px 20px;
             font-size: 16px;
             background-color: #bf0cf0;
@@ -54,16 +61,32 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            margin-top: 20px;
         }
+
+        @media (min-width: 600px) {
+            /* Se a largura da tela for maior que 600 pixels, aplique a margem de 20px à esquerda */
+            .container p,
+            .container button {
+                margin-left: -990px;
+            }
+        }
+       
+
     </style>
 </head>
 <body>
-        <div class="container">
-            <p>A CSC Enterprise agradece pela confiança em nossos serviços de assessoria em marketing. Sua parceria é valiosa para nós! Estamos comprometidos em superar suas expectativas. Em breve, entraremos em contato para discutir detalhes e garantir que sua experiência conosco seja excepcional. Agradecemos por escolher a CSC Enterprise!</p>
-            <button onclick="voltar()">Voltar</button>
-        </div>
-
-    
+    <div class="container">
+        <p>A CSC Enterprise agradece pela confiança em</p>
+        <p>nossos serviços de assessoria em marketing. </p>
+        <p>Sua parceria é valiosa para nós! Estamos </p>
+        <p>comprometidos em superar suas expectativas. </p>
+        <p>Em breve, entraremos em contato para discutir 
+        <p>detalhes e garantir que sua experiência </p>
+        <p>conosco seja excepcional. Agradecemos por </p>
+        <p>escolher a CSC Enterprise!</p>
+        <button onclick="voltar()">Voltar</button>
+    </div>
 
     <script>
         function voltar() {
