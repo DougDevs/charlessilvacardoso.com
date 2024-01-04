@@ -325,6 +325,7 @@ h6 {
   display: block;
 }
 
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -334,6 +335,7 @@ h6 {
   background: url("../img/capa.jpg") top center;
   background-size: cover;
   padding: 0 15px;
+  opacity: 0.9;
 }
 
 #hero h1 {
@@ -342,7 +344,7 @@ h6 {
   font-weight: 700;
   line-height: 56px;
   color: #fff;
-  opacity: 0.4;
+  font-family: 'Poppins', sans-serif;
 }
 
 #hero h2 {
