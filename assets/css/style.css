@@ -1,21 +1,23 @@
-/**
-* Template Name: Lonely
-* Updated: Jul 27 2023 with Bootstrap v5.3.1
-* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-lonely/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap');
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
+
+:root {
+  --text-principal: white;
+  --subtitle: #e9dada;
+  
+
+}
+
+
+
+
 body {
-  font-family: "Open Sans", sans-serif;
-  color: #5a656e;
+  font-family: "Montserrat", sans-serif;
+  background-color: black;
 }
 
 a {
-  color: #d43076;
+  color: #560ff3;
   text-decoration: none;
 }
 
@@ -30,7 +32,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
 }
 
 /*--------------------------------------------------------------
@@ -43,7 +45,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 9999;
-  background: #d43076;
+  background: #560ff3;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -74,8 +76,8 @@ h6 {
   z-index: 997;
   transition: all 0.5s;
   height: 60px;
-  background: #fff;
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.12);
+  background: rgb(0, 0, 0);
+  color: white;
 }
 
 #header .logo h1 {
@@ -90,7 +92,7 @@ h6 {
 
 #header .logo h1 a,
 #header .logo h1 a:hover {
-  color: #2c4964;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -120,20 +122,30 @@ h6 {
   display: flex;
   list-style: none;
   align-items: center;
+  background-color: #251f1f;
+  border-radius: 2rem;
+  text-align: center;
+  gap: 0.9rem;
+  text-align: center;
+  
 }
 
 .navbar li {
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  width: auto;
 }
 
 .navbar a,
 .navbar a:focus {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 10px 0 10px 30px;
+  justify-content: center;
+  text-align: center0;
+  padding: 10px 0 0.5rem 1.8rem;
   font-size: 14px;
-  color: #2c4964;
+  color: #ffffff;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -143,13 +155,21 @@ h6 {
   font-size: 12px;
   line-height: 0;
   margin-left: 5px;
+  
 }
 
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #d43076;
+  color: #560ff3;
+  background-color: white;
+  border-radius: 2rem;
+  width: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navbar .dropdown ul {
@@ -162,7 +182,7 @@ h6 {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #fff;
+  background-color: white;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
   border-radius: 4px;
@@ -184,7 +204,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #d43076;
+  color: #560ff3;
 }
 
 .navbar .dropdown:hover>ul {
@@ -283,7 +303,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #d43076;
+  color: #560ff3;
 }
 
 .navbar-mobile .getstarted,
@@ -318,7 +338,7 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #d43076;
+  color: #560ff3;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -365,7 +385,7 @@ h6 {
 
 #hero .btn-get-started:hover {
   padding-top: 10px;
-  color: #d43076;
+  color: #560ff3;
 }
 
 @media (min-width: 1024px) {
@@ -395,11 +415,12 @@ section {
 }
 
 .section-bg {
-  background: linear-gradient(180deg, #f2f6f9 0%, #fff 100%);
+  background-color: #111;
 }
 
 .section-title {
   padding-bottom: 30px;
+  color: white;
 }
 
 .section-title h2 {
@@ -408,7 +429,7 @@ section {
   margin-bottom: 15px;
   padding-bottom: 15px;
   position: relative;
-  color: #345676;
+  color: rgb(255, 255, 255);
 }
 
 .section-title h2::after {
@@ -417,13 +438,18 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #d43076;
+  background: #560ff3;
   bottom: 0;
   left: 0;
 }
 
+.section-title h3 {
+  color: white;
+}
+
 .section-title p {
   margin-bottom: 0;
+  color: white;
 }
 
 /*--------------------------------------------------------------
@@ -475,20 +501,25 @@ section {
 }
 
 /*--------------------------------------------------------------
-# About
+# Sobre
 --------------------------------------------------------------*/
 .about .content {
   padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .about .content h3 {
-  font-weight: 500;
+  font-weight: bold;
   font-size: 34px;
-  color: #2c4964;
+  color: var(--text-principal);
+
 }
 
 .about .content p {
   margin-bottom: 0;
+  color: var(--subtitle);
 }
 
 .about .content .count-box {
@@ -499,7 +530,7 @@ section {
 .about .content .count-box i {
   display: block;
   font-size: 36px;
-  color: #eeafca;
+  color: #fff;
   float: left;
   line-height: 0;
 }
@@ -509,31 +540,31 @@ section {
   line-height: 20px;
   display: block;
   font-weight: 700;
-  color: #2c4964;
+  color: #ffffff;
   margin-left: 50px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .about .content .count-box p {
   padding: 15px 0 0 0;
   margin: 0 0 0 50px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
-  color: #437099;
+  color: var(--subtitle);
 }
 
 .about .content .count-box a {
   font-weight: 600;
   display: block;
   margin-top: 20px;
-  color: #437099;
+  color: #ffffff;
   font-size: 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   transition: ease-in-out 0.3s;
 }
 
 .about .content .count-box a:hover {
-  color: #6b96be;
+  color: #ffffff;
 }
 
 .about .image {
@@ -573,8 +604,8 @@ section {
   text-transform: uppercase;
   display: block;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  color: #2c4964;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
 }
 
 .skills .progress .skill .val {
@@ -583,14 +614,14 @@ section {
 }
 
 .skills .progress-bar-wrap {
-  background: #fbeaf1;
+  background: #ffff;
 }
 
 .skills .progress-bar {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #dd5a92;
+  background-color: #560ff3;
 }
 
 /*--------------------------------------------------------------
@@ -601,22 +632,23 @@ section {
   font-weight: 500;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #4b7dab;
-  font-family: "Poppins", sans-serif;
+  color: #ffff;
+  font-family: "Montserrat", sans-serif;
 }
 
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #d43076;
+  border-left: 2px solid #560ff3;
   position: relative;
+  color: rgb(245, 233, 233);
 }
 
 .resume .resume-item h4 {
   line-height: 18px;
   font-size: 18px;
   font-weight: 600;
-  color: #2c4964;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 
@@ -651,7 +683,7 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #d43076;
+  border: 2px solid #560ff3;
 }
 
 /*--------------------------------------------------------------
@@ -664,10 +696,10 @@ section {
   background: #fff;
   box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.2);
   transition: all 0.3s ease-in-out;
-  border-radius: 8px;
+  border-radius: 1rem;
   text-align: center;
   z-index: 1;
-  margin-bottom: 10px;
+  margin-bottom: 3rem;
 }
 
 .services .icon-box::before {
@@ -680,13 +712,15 @@ section {
   transition: ease-in-out 0.3s;
   z-index: -1;
   text-align: center;
+  color: white;
  
 }
 
 .services .icon-box:hover::before {
-  background: #db85aa;
+  background: #353232;
   height: 100%;
   border-radius: 0px;
+  color: white;
 }
 
 .services .icon {
@@ -697,7 +731,8 @@ section {
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  background: #d43076;
+  background: #560ff3;
+  
   transition: all 0.3s ease-in-out;
 }
 
@@ -728,12 +763,18 @@ section {
   color: #fff;
 }
 
+
+
 .services .icon-box:hover .icon {
   background: #fff;
 }
 
 .services .icon-box:hover .icon i {
-  color: #d43076;
+  color: #560ff3;
+}
+
+.services .icon-box:hover  h4 {
+  color: #fff;
 }
 
 @media (max-width: 768px) {
@@ -775,7 +816,7 @@ section {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #d43076;
+  color: #560ff3;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -887,11 +928,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #d43076;
+  border: 1px solid #560ff3;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #d43076;
+  background-color: #560ff3;
 }
 
 .portfolio-details .portfolio-info {
@@ -1008,11 +1049,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #d43076;
+  border: 1px solid #560ff3;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #d43076;
+  background-color: #560ff3;
 }
 
 @media (max-width: 767px) {
@@ -1032,7 +1073,7 @@ section {
   font-weight: 300;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: #d43076;
+  color: #560ff3;
 }
 
 .contact .contact-about p {
@@ -1050,7 +1091,7 @@ section {
   font-size: 18px;
   display: inline-block;
   background: #fff;
-  color: #d43076;
+  color: #560ff3;
   line-height: 0;
   padding: 8px 0;
   margin-right: 4px;
@@ -1059,11 +1100,11 @@ section {
   width: 36px;
   height: 36px;
   transition: 0.3s;
-  border: 1px solid #d43076;
+  border: 1px solid #560ff3;
 }
 
 .contact .social-links a:hover {
-  background: #d43076;
+  background: #560ff3;
   color: #fff;
 }
 
@@ -1073,7 +1114,7 @@ section {
 
 .contact .info i {
   font-size: 32px;
-  color: #d43076;
+  color: #560ff3;
   line-height: 0;
   margin-right: 15px;
 }
@@ -1133,11 +1174,11 @@ section {
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  border-color: #d43076;
+  border-color: #560ff3;
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #d43076;
+  background: #560ff3;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1182,10 +1223,12 @@ section {
 .botaover {
   display: inline-block;
   padding: 6px 12px;
+
   text-decoration: none;
   color: #fff;
-  background-color: #d43076;
-  border-radius: 5px;
+  background-color: #560ff3;
+  border-radius: 3rem;
+  margin-top: 1rem;
   transition: border-color 0.3s ease-in-out;
 }
 
