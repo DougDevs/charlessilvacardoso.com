@@ -125,8 +125,9 @@ h6 {
   background-color: #251f1f;
   border-radius: 2rem;
   text-align: center;
-  gap: 0.9rem;
+  gap: 1rem;
   text-align: center;
+  padding: 0 0.3rem;
   
 }
 
@@ -166,6 +167,7 @@ h6 {
   background-color: white;
   border-radius: 2rem;
   width: auto;
+  padding: 0.7rem 2rem;
   text-align: center;
   display: flex;
   align-items: center;
@@ -983,6 +985,7 @@ section {
 .testimonials .testimonial-item {
   box-sizing: content-box;
   min-height: 320px;
+  
 }
 
 .testimonials .testimonial-item .testimonial-img {
@@ -1042,6 +1045,7 @@ section {
 .testimonials .swiper-pagination {
   margin-top: 20px;
   position: relative;
+  
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet {
@@ -1073,14 +1077,14 @@ section {
   font-weight: 300;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: #560ff3;
+  color: white;
 }
 
 .contact .contact-about p {
   font-size: 14px;
   line-height: 24px;
-  font-family: "Playfair Display", serif;
-  color: #3c6387;
+  font-family: "Montserrat", serif;
+  color: rgb(240, 232, 232);
 }
 
 .contact .social-links {
@@ -1122,6 +1126,7 @@ section {
 .contact .info p {
   font-size: 14px;
   margin: 0;
+  color: rgb(238, 230, 230);
 }
 
 .contact .php-email-form .error-message {
@@ -1223,7 +1228,6 @@ section {
 .botaover {
   display: inline-block;
   padding: 6px 12px;
-
   text-decoration: none;
   color: #fff;
   background-color: #560ff3;
